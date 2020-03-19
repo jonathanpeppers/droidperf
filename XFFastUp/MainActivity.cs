@@ -36,11 +36,6 @@ namespace XFMinUp.Droid
         {
             Profile.Start();
 
-			Profile.FrameBegin("ignore");
-			Profile.FrameEnd();
-
-			Profile.FrameBegin("OnResume-OnCreate");
-
 			Profile.FrameBegin("OnCreate");
             {
                 Profile.FramePartition("base.OnCreate");
@@ -98,12 +93,6 @@ namespace XFMinUp.Droid
                 }
             }
 			Profile.FrameEnd(); // OnCreate
-		}
-
-		protected override void OnResume()
-        {
-            base.OnResume();
-			Profile.FrameEnd(); // OnResume-OnCreate
 		}
 	}
 }

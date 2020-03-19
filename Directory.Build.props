@@ -1,0 +1,7 @@
+<Project>
+  <Import Project="C:\src\Xamarin.Forms\.nuspec\Xamarin.Forms.props" />
+  <Import Project="C:\src\Xamarin.Forms\Directory.Build.props" />
+  <PropertyGroup>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+</Project> 
